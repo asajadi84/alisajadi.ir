@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url("../fonts/Vazirmatn-FD-Regular.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url("../fonts/Vazirmatn-FD-Bold.woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazirmatn FD;
+    src: url("../fonts/Vazirmatn-FD-Black.woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #009688 !important;
+    font-family: Vazirmatn FD !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+h1 {
+    font-size: 3rem !important;
+    font-weight: 900 !important;
+}
+
+h2 {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+}
+
+button {
+    border-width: 0;
+}
+
+.button--primary {
+    background-color: #d4e157;
+    border-radius: 32px;
+    color: #000000;
+    font-size: 1.25rem;
+    padding: 2px 12px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.button--primary:hover {
+    background-color: #c0ca33;
+    color: #000000;
+}
+
+.background__logo {
+    -webkit-user-drag: none;
+    animation: logo-rotation 20s linear infinite;
+    user-select: none;
+    width: 320px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.introduction {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.introduction__title {
+    color: #ffffff;
+    text-align: center;
+}
+
+.introduction__description {
+    text-align: center;
+}
+
+.introduction__link {
+    margin-left: 8px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.introduction__link:hover .introduction__link-description {
+    visibility: visible;
+}
+
+.title--primary {
+    margin-bottom: 0;
+}
+
+.fab {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+@keyframes logo-rotation {
+    to {
+        transform: rotate(360deg);
+    }
+}
