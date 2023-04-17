@@ -58,17 +58,17 @@ button {
     color: #000000;
 }
 
-.background__logo {
-    -webkit-user-drag: none;
-    animation: logo-rotation 20s linear infinite;
-    user-select: none;
-    width: 320px;
+.background-logo__container {
     position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    width: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background-logo {
+    -webkit-user-drag: none;
+    user-select: none;
     z-index: -1;
 }
 
@@ -111,10 +111,4 @@ button {
     transform: translateX(-50%);
     white-space: nowrap;
     z-index: 1;
-}
-
-@keyframes logo-rotation {
-    to {
-        transform: rotate(360deg);
-    }
 }
